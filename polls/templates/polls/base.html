@@ -1,0 +1,36 @@
+{% load staticfiles %}
+<html>
+<head>
+    <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>-->
+    <link href='https://fonts.googleapis.com/css?family=Life+Savers:400,700' rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}"/>
+</head>
+<body>
+ 
+    <div class="page-header">
+        <h1><a href="/">Andrea's World</a></h1>
+    </div>
+
+    <nav class="navbar navbar-inverse id="nav-container">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <ul class="nav nav-pills">
+              <li class="active"><a href="#">Home</a></li>
+              <li role="navigation"><a href="#">Profile</a></li>
+              <li role="navigation"><a href="#">Messages</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div>
+        <row centered>
+        {% block content %}
+            
+        {% endblock %}
+        </row>
+    </div>
+</body>
+</html>
