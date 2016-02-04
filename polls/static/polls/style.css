@@ -16,11 +16,6 @@ body {
     background: white url("images/grey-background.png") no-repeat right bottom;
 }
 
-#question-box {
-	padding-top: 10px;
-	padding-bottom: 20px; 
-}
-
 .page-header {
     margin-top: 0;
     margin-bottom: 0;
@@ -44,6 +39,32 @@ body {
   height: 45px;
 }
 
-#content {
-	color: red;
+html,body {
+		height:100%;
+}
+
+#wrap {
+		padding-top: 80px;
+}
+
+#main {
+		overflow:auto;
+		padding-bottom: 160px; /* this needs to be bigger than footer height*/
+}
+
+.footer {
+    margin-top: 100px;
+    color: #eee;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    line-height: 50px;
+    border-top: solid 1px #101010;
+    background-color: #1193ba;
+} 
+
+.footer-text {
+		vertical-align: middle;
+		margin-bottom: 0px;
 }
