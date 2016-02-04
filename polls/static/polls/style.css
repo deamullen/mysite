@@ -21,39 +21,6 @@ body {
 	padding-bottom: 20px; 
 }
 
-<!--#page-title {
-	padding: 25px;
-	font-family: 'Life Savers';
-	font-size: 50px;
-	color: #41BA86;
-	background-color: #454444;
-	border-bottom: #DEDEDE solid 1px;
-}-->
-
-#logo {
-	padding-left: 377px;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-right: 5px;
-  max-width: 72px; 
-  max-height: 72px;
-	background-color: #454444;
-	border-bottom: #DEDEDE solid 1px;
-}
-
-#logo-row {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	border-bottom: 0px;
-	height: 82px;
-}
-
-#menu-row {
-	background-color: #EAF2D9;
-	border: #DEDEDE groove 1px; 
-	padding-top: 20px;
-}
-
 .page-header {
     margin-top: 0;
     margin-bottom: 0;
@@ -67,13 +34,16 @@ body {
 }
 
 .navbar-inverse {
-    padding-top: 10px;
+    padding-top: 5px;
     padding-bottom: 3px;
 }
 
 .navbar-brand {
   background: url(images/world-logo.png) left / contain no-repeat;
   width: 80px;
-  height: 50px;
-  padding-top: 0; 
+  height: 45px;
+}
+
+#content {
+	color: red;
 }

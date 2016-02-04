@@ -35,4 +35,27 @@ class Migration(migrations.Migration):
             name='question',
             field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Question'),
         ),
+                  migrations.CreateModel(
+                                         name='City',
+                                         fields=[
+                                                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                                                 ('city_name', models.CharField(max_length=200)),
+                                                 ('length_of_stay', models.IntegerField(default=0)),
+                                                 ],
+                                         ),
+                  migrations.CreateModel(
+                                         name='Country',
+                                         fields=[
+                                                 ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+                                                 ('country_name', models.CharField(max_length=200)),
+                                                 ('favorite_local_food', models.CharField(max_length=200)),
+                                                 ('favorite_tourist_spot', models.CharField(max_length=200)),
+                                                 ('date_visited', models.DateField(verbose_name=b'date visited')),
+                                                 ],
+                                         ),
+                  migrations.AddField(
+                                      model_name='city',
+                                      name='country_name',
+                                      field=models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='polls.Country'),
+                                      ),
     ]

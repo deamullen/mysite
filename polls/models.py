@@ -24,3 +24,22 @@ class Choice(models.Model):
 
     def __str__(self):
         return self.choice_text
+
+@python_2_unicode_compatible
+class Country(models.Model):
+    country_name = models.CharField(max_length=200)
+    favorite_local_food = models.CharField(max_length=200)
+    favorite_tourist_spot = models.CharField(max_length=200)
+    date_visited = models.DateField('date visited')
+
+    def __str__(self):
+        return self.country_name
+
+@python_2_unicode_compatible
+class City(models.Model):
+    country_name = models.ForeignKey(Country, on_delete=models.CASCADE)
+    city_name = models.CharField(max_length=200)
+    length_of_stay = models.IntegerField(default=0)
+    
+    def __str__(self):
+        return self.city_name
